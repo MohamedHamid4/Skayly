@@ -10,7 +10,10 @@
       "Bash(mkdir -p assets/icons/moods)",
       "Bash(mv assets/moods/*.png assets/icons/moods/)",
       "Bash(rmdir assets/moods)",
-      "Bash(dart run *)"
+      "Bash(dart run *)",
+      "Bash(mv assets/screenshots/*.jpeg screenshots/)",
+      "Bash(mv -f assets/screenshots/08_all_moods_preview.png screenshots/)",
+      "Bash(rmdir assets/screenshots)"
     ]
   }
 }

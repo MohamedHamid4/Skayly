@@ -16,9 +16,17 @@ A smart, mood-reactive Flutter weather app that feels like a daily companion —
 
 </div>
 
+<div align="center">
+
+📖 **[العربية](#-نبذة-عن-التطبيق)** • **[English](#-screenshots)**
+
+</div>
+
 ---
 
 ## 🌤️ نبذة عن التطبيق
+
+<div dir="rtl">
 
 **Skyly** هو تطبيق طقس ذكي مبني بـ Flutter، صُمّم ليكون **رفيقك اليومي** لا مجرد لوحة بيانات باردة.
 
@@ -37,6 +45,8 @@ A smart, mood-reactive Flutter weather app that feels like a daily companion —
 - 🏎️ **أداء عالي** — cache ذكي يقلّل من استهلاك الـ API، blur محسّن للـ GPU، animations خفيفة، splash screen مختصر.
 
 - 📍 **GPS + بحث يدوي** — يحدّد موقعك تلقائياً، أو ابحث عن أي مدينة بالعالم.
+
+</div>
 
 ---
 
