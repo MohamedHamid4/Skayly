@@ -1,0 +1,92 @@
+name: skyly_app
+description: "Skyly — Your daily companion, powered by weather."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.6.0 <4.0.0'
+  flutter: '>=3.27.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State management
+  flutter_riverpod: ^2.5.1
+
+  # Networking
+  dio: ^5.7.0
+
+  # Location & permissions
+  geolocator: ^11.0.0
+  permission_handler: ^11.3.1
+
+  # Storage
+  shared_preferences: ^2.3.2
+
+  # Localization (pinned by flutter_localizations on recent SDKs)
+  intl: ^0.20.2
+
+  # Fonts
+  google_fonts: ^6.2.1
+
+  # Animation
+  flutter_animate: ^4.5.0
+  shimmer: ^3.0.0
+  lottie: ^3.1.2
+
+  # Notifications (scaffolded for future use, not wired in v1)
+  flutter_local_notifications: ^17.2.2
+
+  # Ads
+  google_mobile_ads: ^5.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+  # Asset pipeline — generators not run yet; configured below.
+  flutter_launcher_icons: ^0.14.1
+  flutter_native_splash: ^2.4.1
+
+  # Reserved for future migration to codegen models — not used in v1.
+  # build_runner: ^2.4.13
+  # freezed: ^2.5.7
+  # json_serializable: ^6.8.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/icons/
+    - assets/icons/moods/
+    - assets/animations/
+    - assets/translations/
+
+# Run with: dart run flutter_launcher_icons
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: false
+  remove_alpha_ios: true
+  image_path: "assets/icons/app_icon.png"
+  min_sdk_android: 23
+  adaptive_icon_background: "#4A90E2"
+  adaptive_icon_foreground: "assets/icons/app_icon_foreground.png"
+
+# Run with: dart run flutter_native_splash:create
+# Solid color only — no image. The OS-level splash flashes to #4A90E2 instantly,
+# then the in-app SplashScreen widget takes over with the animated Sky logo.
+# splash_logo.png is still used by the in-app SplashScreen (lib/screens/splash_screen.dart).
+flutter_native_splash:
+  color: "#4A90E2"
+  color_dark: "#0E1430"
+  android_12:
+    color: "#4A90E2"
+    color_dark: "#0E1430"
+  android: true
+  ios: false
